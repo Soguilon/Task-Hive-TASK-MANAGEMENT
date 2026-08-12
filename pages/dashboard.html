@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dashboard — TaskHive</title>
+<link rel="icon" href="../TH.ico">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="../assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+<div class="th-shell">
+  <aside class="th-sidebar" id="th-sidebar"></aside>
+  <div class="sidebar-overlay" id="th-overlay"></div>
+  <div class="th-main">
+    <header class="th-topbar" id="th-topbar"></header>
+    <main class="th-content">
+      <h3 class="mb-3"><i class="fa-solid fa-gauge-high"></i> Dashboard</h3>
+      <div class="row g-3 mb-4" id="stat-cards"></div>
+      <div class="row g-3">
+        <div class="col-lg-6">
+          <div class="card">
+            <h5><i class="fa-solid fa-comments"></i> Recent Discussions</h5>
+            <div id="dash-discussions"></div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card mb-3">
+            <h5><i class="fa-solid fa-list-check"></i> <span id="task-panel-title">Tasks</span></h5>
+            <div id="dash-tasks"></div>
+          </div>
+          <div class="card">
+            <h5><i class="fa-solid fa-bell"></i> Notifications</h5>
+            <div id="dash-notifs"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/js/api.js"></script>
+<script src="../assets/js/auth.js"></script>
+<script src="../assets/js/app.js"></script>
+<script src="../assets/js/dashboard.js"></script>
+</body>
+</html>
